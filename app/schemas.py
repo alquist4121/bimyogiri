@@ -11,7 +11,7 @@ class Data(BaseModel):
 # response
 class Output(BaseModel):
     original: str
-    output: str
+    generated: List[str]
 
 class Pred(BaseModel):
     prediction: List[Output]
